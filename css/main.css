@@ -1,0 +1,220 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Small devices */
+@media (min-width: 576px) {
+    .container {
+        width: 560px;
+    }
+}
+
+/* Medium devices  */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Extra large  */
+@media (min-width: 1200px) {
+    .container {
+        width: 1175px;
+    }
+}
+
+/* End Global Rules */
+/* Start Main */
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width: 991px) {
+    main {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+.container {
+    display: grid;
+    place-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: fit-content;
+}
+
+@media (max-width: 991px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card {
+    width: 310px;
+    padding: 2.75rem 2.75rem;
+}
+
+.card:first-of-type {
+    background-color: var(--Bright-orange);
+}
+
+.card:nth-of-type(2) {
+    background-color: var(--Dark-cyan);
+}
+
+.card:last-of-type {
+    background-color: var(--Very-dark-cyan);
+}
+
+img {
+    width: 4rem;
+}
+
+@media (max-width: 991px) {
+    img {
+        width: 3rem;
+    }
+}
+
+h1 {
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+p {
+    color: var(--Transparent-white-paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.8;
+    letter-spacing: 0.063rem;
+}
+
+button {
+    display: block;
+    padding: 0.75rem 2rem;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    border: 0.063rem solid var(--Very-light-gray-background-headings-buttons);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.938rem;
+    font-weight: 400;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    button {
+        margin-top: 2rem;
+        font-size: 0.875rem;
+    }
+}
+
+.card:first-of-type button {
+    color: var(--Bright-orange);
+}
+
+.card:nth-of-type(2) button {
+    color: var(--Dark-cyan);
+}
+
+.card:last-of-type button {
+    color: var(--Very-dark-cyan);
+}
+
+.card:first-of-type button:hover {
+    color: var(--Very-light-gray-background-headings-buttons);
+    background-color: var(--Bright-orange);
+}
+
+.card:nth-of-type(2) button:hover {
+    color: var(--Very-light-gray-background-headings-buttons);
+    background-color: var(--Dark-cyan);
+}
+
+.card:last-of-type button:hover {
+    color: var(--Very-light-gray-background-headings-buttons);
+    background-color: var(--Very-dark-cyan);
+}
+
+/* End Main */
+/* Start Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+    color: var(--Very-dark-cyan);
+}
+
+/* End Footer */
