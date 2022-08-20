@@ -96,6 +96,17 @@ main {
     width: fit-content;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 @media (max-width: 991px) {
     .content {
         flex-direction: column;
@@ -130,7 +141,7 @@ img {
     }
 }
 
-h1 {
+h2 {
     color: var(--Very-light-gray-background-headings-buttons);
     font-family: 'Big Shoulders Display', cursive;
     font-size: 2.5rem;
@@ -141,7 +152,7 @@ h1 {
 }
 
 @media (max-width: 991px) {
-    h1 {
+    h2 {
         font-size: 2rem;
     }
 }
@@ -155,7 +166,7 @@ p {
     letter-spacing: 0.063rem;
 }
 
-button {
+.card a {
     display: block;
     padding: 0.75rem 2rem;
     margin-top: 5rem;
@@ -166,38 +177,39 @@ button {
     font-weight: 400;
     background-color: var(--Very-light-gray-background-headings-buttons);
     cursor: pointer;
+    width: fit-content;
 }
 
 @media (max-width: 991px) {
-    button {
+    .card a {
         margin-top: 2rem;
         font-size: 0.875rem;
     }
 }
 
-.card:first-of-type button {
+.card:first-of-type a {
     color: var(--Bright-orange);
 }
 
-.card:nth-of-type(2) button {
+.card:nth-of-type(2) a {
     color: var(--Dark-cyan);
 }
 
-.card:last-of-type button {
+.card:last-of-type a {
     color: var(--Very-dark-cyan);
 }
 
-.card:first-of-type button:hover {
+.card:first-of-type a:hover {
     color: var(--Very-light-gray-background-headings-buttons);
     background-color: var(--Bright-orange);
 }
 
-.card:nth-of-type(2) button:hover {
+.card:nth-of-type(2) a:hover {
     color: var(--Very-light-gray-background-headings-buttons);
     background-color: var(--Dark-cyan);
 }
 
-.card:last-of-type button:hover {
+.card:last-of-type a:hover {
     color: var(--Very-light-gray-background-headings-buttons);
     background-color: var(--Very-dark-cyan);
 }
